@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Finishing Instagram sign-in | Clip Grabber</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="doc">
+  <div class="wrap narrow">
+    <h1>Finishing sign-in…</h1>
+    <p>Sending you back to Clip Reviewer on this computer. If nothing happens, make sure Clip Reviewer is open and try Connect Instagram again.</p>
+  </div>
+</main>
+<script>
+  // Instagram's sign-in comes back here; pass its answer (code and state) to Clip Reviewer on this PC.
+  // Nothing is sent anywhere else, and this page stores nothing.
+  location.replace("http://127.0.0.1:8768/callback/" + location.search);
+</script>
+</body>
+</html>
